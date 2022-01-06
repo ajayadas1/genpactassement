@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WebProject3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+<servlet-name>S4</servlet-name>
+<servlet-class>com.org.MyCookie1</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>S4</servlet-name>
+<url-pattern>/display</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>S5</servlet-name>
+<servlet-class>com.org.MyCookie2</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>S5</servlet-name>
+<url-pattern>/first</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>sessiontest</servlet-name>
+<servlet-class>com.org.sessionmgmt.SessionDemo</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>sessiontest</servlet-name>
+<url-pattern>/mysession</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>sessiont</servlet-name>
+<servlet-class>com.org.sessionmgmt.RedirectSession</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>sessiont</servlet-name>
+<url-pattern>/sessiondata</url-pattern>
+</servlet-mapping>
+
+</web-app>
